@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtVisor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/visor"
+            android:paddingRight="5dp"
+            android:textColor="@color/colorBlack"
+            android:textDirection="rtl"
+            android:textIsSelectable="true"
+            android:textSize="32dp"
+            android:textStyle="bold|italic"
+
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnLimpar"
+                    android:layout_width="match_parent"
+                    android:onClick="limparTudoClick"
+                    android:text="C"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnLimparUmPorVez"
+                    android:layout_width="match_parent"
+                    android:onClick="limparUmClick"
+                    android:text="←"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnRaiz"
+                    android:layout_width="match_parent"
+                    android:onClick="raizClick"
+                    android:text=" √"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnVezes"
+                    android:layout_width="match_parent"
+                    android:text="*"
+                    android:textSize="30dp"
+                    android:onClick="operacaoClick"/>
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="7"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="8"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="9"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnSomar"
+                    android:layout_width="match_parent"
+                    android:onClick="operacaoClick"
+                    android:text="+"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="4"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="5"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="6"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnSubtrair"
+                    android:layout_width="match_parent"
+                    android:text="-"
+                    android:textSize="30dp"
+                    android:onClick="operacaoClick"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="1"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="2"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:onClick="numeroClick"
+                    android:text="3"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnDividir"
+                    android:layout_width="match_parent"
+                    android:text="/"
+                    android:textSize="30dp"
+                    android:onClick="operacaoClick"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="match_parent"
+                    android:layout_span="2"
+                    android:onClick="numeroClick"
+                    android:text="0"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnPonto"
+                    android:layout_width="match_parent"
+                    android:text="."
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/btnIgual"
+                    android:layout_width="match_parent"
+                    android:onClick="igualClick"
+                    android:text="="
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnPotencia"
+                    android:layout_width="match_parent"
+                    android:onClick="potenciaClick"
+                    android:text="*"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>
